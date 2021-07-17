@@ -13,17 +13,22 @@ class sessionManager{
     static let shared = sessionManager()
     
     var loggedIn: Bool?
+    var loggedUser: String?
     
     private init(){}
     
-    
+    func getName() -> String{
+        return loggedUser ?? ""
+    }
     func logOut(){
         loggedIn = false
+        loggedUser = ""
     }
     
     func auth(name: String, pw: String) -> Bool{
         if (name == "hola" && pw == "1234"){
             loggedIn = true
+            loggedUser = name
             return true
         }
         return false

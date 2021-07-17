@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Logged View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="mbc" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="loggedViewController" customModule="mbc" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -33,18 +33,36 @@
                                     <constraint firstAttribute="width" constant="69" id="vbN-LQ-mLA"/>
                                 </constraints>
                                 <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N3T-ny-SzQ"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIT-h2-S5W">
+                                <rect key="frame" x="166.5" y="167" width="81" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="81" id="Geu-Me-WoV"/>
+                                    <constraint firstAttribute="height" constant="21" id="QWf-XL-GI6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="3ES-bV-UXh" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6hn-xw-JrX"/>
+                            <constraint firstItem="sIT-h2-S5W" firstAttribute="top" secondItem="QR2-HV-2Vn" secondAttribute="bottom" constant="56" id="77W-mc-0C8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3ES-bV-UXh" secondAttribute="bottom" constant="37" id="PJF-cc-HuQ"/>
                             <constraint firstItem="QR2-HV-2Vn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="ZjC-dd-abW"/>
                             <constraint firstItem="QR2-HV-2Vn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="isE-VC-gfa"/>
+                            <constraint firstItem="sIT-h2-S5W" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="sT1-RU-Cx7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ec8-bH-S3g"/>
+                    <connections>
+                        <outlet property="name" destination="sIT-h2-S5W" id="EAO-Ll-8hf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

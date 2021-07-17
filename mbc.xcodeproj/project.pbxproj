@@ -14,6 +14,7 @@
 		83BEF6EC26A2447300A6ECC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BEF6EB26A2447300A6ECC7 /* Assets.xcassets */; };
 		83BEF6EF26A2447300A6ECC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BEF6ED26A2447300A6ECC7 /* LaunchScreen.storyboard */; };
 		83BEF6F826A25BCB00A6ECC7 /* sessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BEF6F726A25BCB00A6ECC7 /* sessionManager.swift */; };
+		83BEF6FB26A2648000A6ECC7 /* loggedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BEF6FA26A2648000A6ECC7 /* loggedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		83BEF6EE26A2447300A6ECC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83BEF6F026A2447300A6ECC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83BEF6F726A25BCB00A6ECC7 /* sessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sessionManager.swift; sourceTree = "<group>"; };
+		83BEF6FA26A2648000A6ECC7 /* loggedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loggedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				83BEF6E226A2447100A6ECC7 /* AppDelegate.swift */,
+				83BEF6FA26A2648000A6ECC7 /* loggedViewController.swift */,
 				83BEF6E426A2447100A6ECC7 /* SceneDelegate.swift */,
 				83BEF6F726A25BCB00A6ECC7 /* sessionManager.swift */,
 				83BEF6E626A2447100A6ECC7 /* ViewController.swift */,
@@ -143,6 +146,7 @@
 				83BEF6E726A2447100A6ECC7 /* ViewController.swift in Sources */,
 				83BEF6E326A2447100A6ECC7 /* AppDelegate.swift in Sources */,
 				83BEF6F826A25BCB00A6ECC7 /* sessionManager.swift in Sources */,
+				83BEF6FB26A2648000A6ECC7 /* loggedViewController.swift in Sources */,
 				83BEF6E526A2447100A6ECC7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
