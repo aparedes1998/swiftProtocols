@@ -23,6 +23,7 @@ class sessionManager{
     func logOut(){
         loggedIn = false
         loggedUser = ""
+        NotificationCenter.default.post(name: Notification.Name("logout"), object: nil)
     }
     
     func auth(name: String, pw: String) -> Bool{

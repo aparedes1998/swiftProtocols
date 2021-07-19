@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var user: UITextField!
     @IBOutlet weak var pass: UITextField!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
@@ -26,9 +27,10 @@ class ViewController: UIViewController {
             // Do nothing
         }
     }
-    override func addObserver(_ observer: NSObject, forKeyPath keyPath: String, options: NSKeyValueObservingOptions = [], context: UnsafeMutableRawPointer?) {
+    
+    
         
-    }
+  
     // override func prepare (for segue: UIStoryboardSegue, sender: Any?) {
     // switch segue.identifier
     // case "segue": segue.destination.title ="Show segue"
